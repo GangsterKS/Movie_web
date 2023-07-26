@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Fotter from './Fotter';
 
 export default function About() {
   const[email, setEmail] = useState('');
@@ -39,7 +40,7 @@ export default function About() {
       <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
         <div className="flex flex-col items-start">
         <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-            <div className='h-6 w-6 text-white text-2xl text-center mb-1'>
+            <div className='h-6 w-6 text-white text-2xl text-center mb-2'>
             <i class="fa-regular fa-calendar-days"></i>
             </div>
           </div>
@@ -61,6 +62,7 @@ export default function About() {
   </div>
   </div>
   <ToastContainer position="top-center" theme="colored"/>
+  <Fotter />
 </>
 
     

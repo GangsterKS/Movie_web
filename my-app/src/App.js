@@ -7,6 +7,7 @@ import Movies from './components/Movies';
 import Hero from './components/Hero';
 import Contact from './components/Contact';
 import About from './components/About';
+import MovieDetails from './components/MovieDetails';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
           <Route path="/About" element={<About />} >
           </Route>
           <Route path="/*" element={<Error />} >
+          </Route>
+          <Route path="/moviedetail" element={<MovieDetails />} >
           </Route>
       </Routes>
     </BrowserRouter>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useGlobalContext } from './Context'
 
+
 const Slider = () => {
   const {movie} = useGlobalContext()
   const [currentPage, setCurrentPage] = useState(1);
@@ -48,8 +49,8 @@ const Slider = () => {
               <div className='w-auto bg-slate-700 p-1 px-4 font-sans text-xl rounded-md text-center ml-2 cursor-pointer' onClick={Next}><p>Next<i className="fa-solid ml-1 fa-arrow-right"></i></p></div>
             </div>
             <div className='w-screen grid justify-center'>
-            <div className='text-center mt-6 text-xl'>
-            <p className=' w-80 bg-slate-300 p-2 px-2 rounded-md'>Enjoy All Your Favourate Movie's</p>
+            <div className='text-center mt-6 max-[400px]:text-sm text-xl'>
+            <p className=' w-auto bg-slate-300 max-[400px]:p-0 max-[400px]:px-0 p-2 px-2 rounded-md'>Enjoy All Your Favourate Movie's</p>
           </div></div>
           </div>
         

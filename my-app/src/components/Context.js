@@ -20,7 +20,7 @@ const AppProvider = ({children}) => {
     const [query, setQuery] = useState('Iron man');
     const [isError, setIsError] = useState({ show: "false", msg: ""})
 
-    let API = "https://www.omdbapi.com/?apikey=a03cdc44&"
+    let API = "https://www.omdbapi.com/?apikey=a03cdc44&f"
 
     const getMovie = async(url) => {
 
